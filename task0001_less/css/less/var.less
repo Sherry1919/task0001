@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@main_width:980px;
+@hd_h:80px;
+@head_pic_radius:80px;
+@main_bgc:#e2e2e2;
+@color_white:#fff;
+@hd_bgc:#50c3af;
+@c_bar:#888;
+
+.wrap{
+	width: @main_width;
+	margin: 0 auto;
+}
+.bg(@bgc:#fff){
+	background: @bgc none repeat scroll 0 0;
+}
+.hd
+{
+	width: 100%;
+	background-color: @hd_bgc;
+}
+.border(@w:1px,@c:#000){
+	border: @w solid @c;
+}
+//浮动
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+//定位
+.pos(r){
+	position: relative;
+}
+.pos(a){
+	position: absolute;
+}
+.pos(f){
+	position: fixed;
+}
+.font-s(@p:12px){
+	font-size: @p;
+}
+.db
+{
+	display: block;
+}
+.di{
+	display: inline;
+}
+.dib{
+	display: inline-block;
+}
+
+//文字
+.txt_ver(@w:40px){
+	height: @w;
+	line-height: @w;
+}
+.tc{
+	text-align: center;
+}
+.tl{
+	text-align: left;
+}
+.tr{
+	text-align: right;
+}
+.sidebar-form
+{
+	width: 260px;
+	.bg();
+	.fr;
+	margin-bottom: 10px;
+}
+.circle(@w:80px){
+	width: @w;
+	height: @w;
+	border-radius: 50%;
+}
+/*gallery*/
+@c_all:#92c0ef;
+@c_all_h:#47456D;
+@c_js:#dfc6e6;
+@c_js_h:#522a5c;
+@c_ui:#d2a6ff;
+@c_ui_h:#5900b2;
+@c_frw:#ffa98c;
+@c_frw_h:#8c2300;
+@c_app:#ffe188;
+@c_app_h:#d9a300;
+.gallery_tab(@c_all){
+	border-top: 4px solid @c_all;
+}
